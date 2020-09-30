@@ -1,0 +1,229 @@
+<html>
+<head>
+    <style>
+    body{
+        font-family: Arial;
+        color:white;
+        background:url(C:/Users/Acer/Desktop/Covid-19/Images/bgd1.jpg) no-repeat;
+        background-size:cover;
+    }
+    .box{
+        text-align: center;
+        color: white;
+        position: inherit;
+        display: inline-block;
+        margin: 0 auto;
+        margin-top: -20px;
+        height: auto;
+        opacity: 0.8;
+        width: 100%;
+        background: rgb(59, 37, 12);
+    }
+    .box ul{
+        color: white;
+    }
+    .box ul li{
+        font-size: 3.25vh;
+        height: 45px auto;
+        width: 210px auto;
+        margin: 10px;
+        padding: 14px 16px;
+        text-align: center;
+        float: left;
+        line-height: 40px;
+        margin-left: 30px;
+        display: block;
+    }
+    .box ul li a{
+        text-decoration: none;
+        color: white;
+        display: block;
+    }
+    .box ul li:hover{
+        border-radius: 3px;
+        background:rgb(184, 120, 24);
+    }
+    .box ul li a:hover{
+        color:rgb(53, 35, 8);
+    }
+    .sub li{
+        list-style: disc;
+
+    }
+    .box ul li ul li{
+        display: none;
+    }
+    .box ul li:hover ul li{
+        display: block;
+    }
+    .box ul li:hover ul li:hover{
+        background-color: rgb(59, 37, 12);
+    }
+    .box ul li:hover ul li a:hover{
+       color: rgb(184, 120, 24);
+    }
+    .fifth{
+        background:rgb(184, 120, 24);
+        border-radius: 3px;
+        padding: 2px;
+    }
+    .handles img{
+        width: 50px;
+        height: 50px;
+        margin-top: 25px;
+        float: right;
+        margin-right: 15px;
+    }
+    .handles img:hover{
+        transform: scale(1.1);
+    }
+    .measures{
+        background-color:rgb(119, 77, 37);
+        opacity: 0.9;
+        padding: 60px;
+        text-align: left;
+        height: auto;
+        width: auto;
+        margin-top: 5px;
+    }
+    .container{
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        color: black;
+        font-size: large;
+    }
+    input[type=text], textarea {
+        width: 70%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    input[type=date]{
+        width: 70%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    input[type=email]{
+        width: 70%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    input[type=submit]{
+        background-color:darkcyan;
+        width: 200px;
+        height: 50px;
+        color: white;
+        font-size:large;
+        border-radius: 2px;
+    }
+    input[type=submit]:hover{
+        background-color: #1d1418;
+    }
+    input[type=radio]{
+        margin-top: 6px;
+        margin-bottom: 16px;
+    }
+    .footer{
+        background:rgb(59, 37, 12);
+        text-align: center;
+        color: white;
+        opacity: 0.8;
+        margin-top: -15px;
+    }
+    .footer h3 a{
+        color: white;
+    }
+    .handles2{
+        display: inline;
+        position: relative;
+    }
+    .handles2 img{
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+        margin-top: auto;
+    }
+    .handles2 img:hover{
+        transform: scale(1.1);
+    }
+    </style>
+    <title>Queries</title>
+</head>
+<body>
+    <div class="box">
+    <ul type = "none" >
+        <li><a href = "sample covid.html">Home</a></li>
+        <li><a href = "Myths and facts.html">Myths & Facts</a>
+        <ul class="sub">
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Analysis.html">Analysis</a></li>
+        </ul>
+        </li>
+        <li><a href = "Measures takes.html">Measures Taken </a></li>
+        <li><a href = "Future Planing.html">Future Planning</a></li>
+        <li class="fifth"><a href = "Queries.html"><div class="content1">Queries</div></a></li>
+    </ul>
+    <div class="handles">
+        <a href="https://www.facebook.com"><img src="C:/Users/Acer/Desktop/Covid-19/Images/Fb.png"></a>
+        <a href="https://www.twitter.com"><img src="C:/Users/Acer/Desktop/Covid-19/Images/twitter.PNG"></a>
+    </div>
+    </div>
+    <div class="measures">
+      <div class="container">
+        <form onsubmit="alert('Submit!');return false">
+        Name:<br><input type="text" id="Name">
+        <br>
+        <br>
+        Gender:<input type="radio" id="Male" name="Gender" value="Male">Male
+        <input type="radio" id="Female" name="Gender" value="Female">Female
+        <br> 
+        <br>
+        Date:<br><input type="date" id="Date">
+        <br>
+        <br> 
+        Address:<br><input type="text" id="Address">
+        <br>
+        <br>
+        Email:<br><input type="email" id="Email">
+        <br>
+        <br>
+        Enter your query:
+        <br>
+        <textarea  id="Queries" cols="70" rows="10">
+        </textarea>
+        <br>
+        <br>
+        <center>
+        <input type="submit"value="Submit">
+        </center>
+      </form>  
+    </div>
+    </div>
+    <div class="footer">
+        <h3><a href="Queries.html">CONTACT US</a></h3>
+        <p>
+© 2020 Impact of covid - 19 on eduction. All RIGHTS RESERVED.
+        </p>
+        <div class="handles2">
+            <a href="https://www.facebook.com"><img src="C:/Users/Acer/Desktop/Covid-19/Images/Fb.png"></a>
+            <a href="https://www.twitter.com"><img src="C:/Users/Acer/Desktop/Covid-19/Images/twitter.PNG"></a>
+        </div>
+    </div>
+</body>
+</html>
+
